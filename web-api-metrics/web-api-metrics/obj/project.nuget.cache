@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Z2JqZxdT7YIWRx0QAFaBsrF3LhmAS3ZaLUOJcfpRVLVfHv5ojzb5mvoPmtt02fUJoe4axLbVo9sr+4phStRp5w==",
+  "success": true,
+  "projectFilePath": "C:\\labs\\dotnetcore\\lab-api-grafana-prometheus\\web-api-metrics\\web-api-metrics\\web-api-metrics.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dgmodesto\\.nuget\\packages\\prometheus-net\\4.1.1\\prometheus-net.4.1.1.nupkg.sha512",
+    "C:\\Users\\dgmodesto\\.nuget\\packages\\prometheus-net.aspnetcore\\4.1.1\\prometheus-net.aspnetcore.4.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

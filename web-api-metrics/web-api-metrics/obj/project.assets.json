@@ -1,0 +1,148 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "prometheus-net/4.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.1/Prometheus.NetCore.dll": {},
+          "lib/netcoreapp2.1/Prometheus.NetStandard.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Prometheus.NetCore.dll": {},
+          "lib/netcoreapp2.1/Prometheus.NetStandard.dll": {}
+        }
+      },
+      "prometheus-net.AspNetCore/4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "prometheus-net": "4.1.1"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Prometheus.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Prometheus.AspNetCore.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "prometheus-net/4.1.1": {
+      "sha512": "A+z2qxPv+tJOl78yUaQEzyDMap0sjjKL+WVUa+JzXyRQ1ZPtNeDf6qXD+w7tYkVd88GQtnoJ7xDaxluiOM6S8Q==",
+      "type": "package",
+      "path": "prometheus-net/4.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/prometheus-net-logo.png",
+        "lib/net461/Prometheus.NetStandard.dll",
+        "lib/net461/Prometheus.NetStandard.pdb",
+        "lib/net461/Prometheus.NetStandard.xml",
+        "lib/netcoreapp2.1/Prometheus.NetCore.deps.json",
+        "lib/netcoreapp2.1/Prometheus.NetCore.dll",
+        "lib/netcoreapp2.1/Prometheus.NetCore.pdb",
+        "lib/netcoreapp2.1/Prometheus.NetCore.xml",
+        "lib/netcoreapp2.1/Prometheus.NetStandard.deps.json",
+        "lib/netcoreapp2.1/Prometheus.NetStandard.dll",
+        "lib/netcoreapp2.1/Prometheus.NetStandard.pdb",
+        "lib/netcoreapp2.1/Prometheus.NetStandard.xml",
+        "lib/netstandard2.0/Prometheus.NetStandard.deps.json",
+        "lib/netstandard2.0/Prometheus.NetStandard.dll",
+        "lib/netstandard2.0/Prometheus.NetStandard.pdb",
+        "lib/netstandard2.0/Prometheus.NetStandard.xml",
+        "prometheus-net.4.1.1.nupkg.sha512",
+        "prometheus-net.nuspec"
+      ]
+    },
+    "prometheus-net.AspNetCore/4.1.1": {
+      "sha512": "l9+LcJfVJ9vNbwSuRNqz+/GnfVlVsiWjjDZmrq3BFV2tizX9Emu1u96yKNyYb6H5DKZseC5yMw2/8GJEj1b76Q==",
+      "type": "package",
+      "path": "prometheus-net.aspnetcore/4.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/prometheus-net-logo.png",
+        "lib/netcoreapp3.1/Prometheus.AspNetCore.deps.json",
+        "lib/netcoreapp3.1/Prometheus.AspNetCore.dll",
+        "lib/netcoreapp3.1/Prometheus.AspNetCore.pdb",
+        "lib/netcoreapp3.1/Prometheus.AspNetCore.xml",
+        "lib/netstandard2.0/Prometheus.AspNetCore.deps.json",
+        "lib/netstandard2.0/Prometheus.AspNetCore.dll",
+        "lib/netstandard2.0/Prometheus.AspNetCore.pdb",
+        "lib/netstandard2.0/Prometheus.AspNetCore.xml",
+        "prometheus-net.aspnetcore.4.1.1.nupkg.sha512",
+        "prometheus-net.aspnetcore.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "prometheus-net.AspNetCore >= 4.1.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\dgmodesto\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\labs\\dotnetcore\\lab-api-grafana-prometheus\\web-api-metrics\\web-api-metrics\\web-api-metrics.csproj",
+      "projectName": "web-api-metrics",
+      "projectPath": "C:\\labs\\dotnetcore\\lab-api-grafana-prometheus\\web-api-metrics\\web-api-metrics\\web-api-metrics.csproj",
+      "packagesPath": "C:\\Users\\dgmodesto\\.nuget\\packages\\",
+      "outputPath": "C:\\labs\\dotnetcore\\lab-api-grafana-prometheus\\web-api-metrics\\web-api-metrics\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\dgmodesto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "prometheus-net.AspNetCore": {
+            "target": "Package",
+            "version": "[4.1.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
