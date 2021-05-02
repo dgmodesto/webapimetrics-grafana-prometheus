@@ -1,0 +1,31 @@
+version: "3"
+services:
+  api:
+    build:
+      context: ./web-api-metrics
+      dockerfile: Dockerfile
+      args:
+        version: 1
+    image: web-api-metrics-metrics
+    ports:
+      - 8080:80
+    networks:
+      - web_api_metrics_network
+  prometheus:
+    build:
+      context: ./prometheus
+      dockerfile: Dockerfile
+      args:
+        version: 1
+    image: prometheus-local
+    restart: always
+    ports: 
+      - 9090:9090
+    networks:
+      - web_api_metrics_network
+    volumes: 
+      - './prometheus/data:/data'
+
+networks:
+  web_api_metrics_network:
+    driver: overlay

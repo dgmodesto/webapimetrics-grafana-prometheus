@@ -22,3 +22,8 @@ C:\labs\dotnetcore\lab-api-grafana-prometheus\web-api-metrics\web-api-metrics\ob
 C:\labs\dotnetcore\lab-api-grafana-prometheus\web-api-metrics\web-api-metrics\obj\Debug\netcoreapp3.1\web-api-metrics.dll
 C:\labs\dotnetcore\lab-api-grafana-prometheus\web-api-metrics\web-api-metrics\obj\Debug\netcoreapp3.1\web-api-metrics.pdb
 C:\labs\dotnetcore\lab-api-grafana-prometheus\web-api-metrics\web-api-metrics\obj\Debug\netcoreapp3.1\web-api-metrics.genruntimeconfig.cache
+C:\labs\dotnetcore\lab-api-grafana-prometheus\web-api-metrics\web-api-metrics\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\labs\dotnetcore\lab-api-grafana-prometheus\web-api-metrics\web-api-metrics\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\labs\dotnetcore\lab-api-grafana-prometheus\web-api-metrics\web-api-metrics\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\labs\dotnetcore\lab-api-grafana-prometheus\web-api-metrics\web-api-metrics\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\labs\dotnetcore\lab-api-grafana-prometheus\web-api-metrics\web-api-metrics\obj\Debug\netcoreapp3.1\web-api-metrics.MvcApplicationPartsAssemblyInfo.cs

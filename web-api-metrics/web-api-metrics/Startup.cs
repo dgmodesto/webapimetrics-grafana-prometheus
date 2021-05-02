@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Prometheus;
+using web_api_metrics.Setup;
 
 namespace web_api_metrics
 {
@@ -27,6 +28,7 @@ namespace web_api_metrics
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSwaggerConfiguration();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,26 +40,8 @@ namespace web_api_metrics
             
             }
 
-            /*INICIO DA CONFIGURAÇÃO - PROMETHEUS*/
-            // Custom Metrics to count requests for each endpoint and the method
-            var counter = Metrics.CreateCounter("webapimetric", "Counts requests to the WebApiMetrics API endpoints",
-                new CounterConfiguration
-                {
-                    LabelNames = new[] { "method", "endpoint" }
-                });
-
-            app.Use((context, next) =>
-            {
-                counter.WithLabels(context.Request.Method, context.Request.Path).Inc();
-                return next();
-            });
-
-            // Use the prometheus middleware
-            app.UseMetricServer();
-            app.UseHttpMetrics();
-
-            /*FIM DA CONFIGURAÇÃO - PROMETHEUS*/
-
+            // Adicionanr configuraï¿½ï¿½o do Prometheus
+            app.UsePrometheusConfiguration();
 
             app.UseHttpsRedirection();
 
@@ -69,6 +53,9 @@ namespace web_api_metrics
             {
                 endpoints.MapControllers();
             });
+
+            // Adicionar Swagger
+            app.UseSwaggerConfiguration();
         }
     }
 }

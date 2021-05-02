@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: "web-api-metrics-job"
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["172.31.240.1:8080"]
