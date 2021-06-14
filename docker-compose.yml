@@ -25,7 +25,18 @@ services:
       - web_api_metrics_network
     volumes: 
       - './prometheus/data:/data'
-
+  grafana:
+    build:
+      context: ./grafana
+      dockerfile: Dockerfile
+      args:
+        version: 1
+    image: grafana-local
+    restart: always
+    ports:
+      - 3000:3000
+    networks: 
+      - web_api_metrics_network
 networks:
   web_api_metrics_network:
     driver: overlay
